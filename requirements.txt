@@ -1,0 +1,9 @@
+flask
+requests
+robotframework
+robotframework-requestsservices:
+  web:
+    container_name: api_registry
+    image: ghcr.io/pattanaponcws/simple-api:latest  # เปลี่ยนเป็น image ที่ถูกต้อง
+    ports:
+      - "5001:5000"
